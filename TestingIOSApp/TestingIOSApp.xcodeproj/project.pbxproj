@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19204CDB29E469E5007CD6BB /* TestingIOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CDA29E469E5007CD6BB /* TestingIOSAppApp.swift */; };
-		19204CDD29E469E5007CD6BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CDC29E469E5007CD6BB /* ContentView.swift */; };
 		19204CDF29E469E6007CD6BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19204CDE29E469E6007CD6BB /* Assets.xcassets */; };
 		19204CE329E469E6007CD6BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19204CE229E469E6007CD6BB /* Preview Assets.xcassets */; };
 		19204CED29E469E7007CD6BB /* TestingIOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CEC29E469E7007CD6BB /* TestingIOSAppTests.swift */; };
 		19204CF729E469E7007CD6BB /* TestingIOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CF629E469E7007CD6BB /* TestingIOSAppUITests.swift */; };
 		19204CF929E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CF829E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift */; };
+		1971D50029E494DE005205B5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D4FA29E494DE005205B5 /* MainView.swift */; };
+		1971D50129E494DE005205B5 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D4FB29E494DE005205B5 /* SplashScreenView.swift */; };
+		1971D50329E494DE005205B5 /* EnvironmentConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D4FD29E494DE005205B5 /* EnvironmentConstants.swift */; };
+		1971D50B29E497B8005205B5 /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = 1971D50A29E497B8005205B5 /* planets.json */; };
+		1971D51129E497F5005205B5 /* CallingAnAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D51029E497F5005205B5 /* CallingAnAPI.swift */; };
+		1971D51429E49802005205B5 /* RandomUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D51329E49802005205B5 /* RandomUserModel.swift */; };
+		1971D51629E498B5005205B5 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D51529E498B5005205B5 /* LottieView.swift */; };
+		1971D51829E498BB005205B5 /* NavigationManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D51729E498BB005205B5 /* NavigationManagerView.swift */; };
+		1971D51A29E498BE005205B5 /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D51929E498BE005205B5 /* NavigationRoutes.swift */; };
+		1971D51D29E49B40005205B5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1971D51C29E49B40005205B5 /* Alamofire */; };
+		1971D52029E49B53005205B5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1971D51F29E49B53005205B5 /* Lottie */; };
+		1971D52229E49CD6005205B5 /* TestingIOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971D52129E49CD2005205B5 /* TestingIOSAppApp.swift */; };
+		19A3151429E60C5000612E9F /* RandomUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A3151329E60C5000612E9F /* RandomUserView.swift */; };
+		19A3151729E611EA00612E9F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 19A3151629E611EA00612E9F /* Kingfisher */; };
+		19A3151A29E612B300612E9F /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A3151929E612B300612E9F /* RandomUserViewModel.swift */; };
+		19A3151D29E61B1300612E9F /* RandonUserBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A3151C29E61B1300612E9F /* RandonUserBaseURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +49,7 @@
 
 /* Begin PBXFileReference section */
 		19204CD729E469E5007CD6BB /* TestingIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		19204CDA29E469E5007CD6BB /* TestingIOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIOSAppApp.swift; sourceTree = "<group>"; };
-		19204CDC29E469E5007CD6BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		19204CDE29E469E6007CD6BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19204CDE29E469E6007CD6BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Modules/Assets.xcassets; sourceTree = "<group>"; };
 		19204CE029E469E6007CD6BB /* TestingIOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestingIOSApp.entitlements; sourceTree = "<group>"; };
 		19204CE229E469E6007CD6BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19204CE829E469E6007CD6BB /* TestingIOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingIOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +57,19 @@
 		19204CF229E469E7007CD6BB /* TestingIOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingIOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19204CF629E469E7007CD6BB /* TestingIOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIOSAppUITests.swift; sourceTree = "<group>"; };
 		19204CF829E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1971D4FA29E494DE005205B5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1971D4FB29E494DE005205B5 /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		1971D4FD29E494DE005205B5 /* EnvironmentConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentConstants.swift; sourceTree = "<group>"; };
+		1971D50A29E497B8005205B5 /* planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planets.json; sourceTree = "<group>"; };
+		1971D51029E497F5005205B5 /* CallingAnAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallingAnAPI.swift; sourceTree = "<group>"; };
+		1971D51329E49802005205B5 /* RandomUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUserModel.swift; sourceTree = "<group>"; };
+		1971D51529E498B5005205B5 /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		1971D51729E498BB005205B5 /* NavigationManagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManagerView.swift; sourceTree = "<group>"; };
+		1971D51929E498BE005205B5 /* NavigationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
+		1971D52129E49CD2005205B5 /* TestingIOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIOSAppApp.swift; sourceTree = "<group>"; };
+		19A3151329E60C5000612E9F /* RandomUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserView.swift; sourceTree = "<group>"; };
+		19A3151929E612B300612E9F /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
+		19A3151C29E61B1300612E9F /* RandonUserBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandonUserBaseURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A3151729E611EA00612E9F /* Kingfisher in Frameworks */,
+				1971D51D29E49B40005205B5 /* Alamofire in Frameworks */,
+				1971D52029E49B53005205B5 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +123,13 @@
 		19204CD929E469E5007CD6BB /* TestingIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				1971D52129E49CD2005205B5 /* TestingIOSAppApp.swift */,
 				19204CE029E469E6007CD6BB /* TestingIOSApp.entitlements */,
-				19204CDA29E469E5007CD6BB /* TestingIOSAppApp.swift */,
-				19204CDC29E469E5007CD6BB /* ContentView.swift */,
-				19204CDE29E469E6007CD6BB /* Assets.xcassets */,
+				1971D4FB29E494DE005205B5 /* SplashScreenView.swift */,
+				1971D4FA29E494DE005205B5 /* MainView.swift */,
+				19A3151B29E61AF800612E9F /* Constants */,
+				1971D50C29E497D5005205B5 /* Modules */,
+				1971D50629E49763005205B5 /* Assets */,
 				19204CE129E469E6007CD6BB /* Preview Content */,
 			);
 			path = TestingIOSApp;
@@ -129,6 +160,86 @@
 			path = TestingIOSAppUITests;
 			sourceTree = "<group>";
 		};
+		1971D50629E49763005205B5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				19204CDE29E469E6007CD6BB /* Assets.xcassets */,
+				1971D50929E4979D005205B5 /* Lottie */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1971D50929E4979D005205B5 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				1971D50A29E497B8005205B5 /* planets.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		1971D50C29E497D5005205B5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				19A3151229E60C3600612E9F /* RandomUser */,
+				1971D50D29E497DA005205B5 /* Alamofire */,
+				1971D50E29E497DF005205B5 /* Lottie */,
+				1971D50F29E497E2005205B5 /* Navigation */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1971D50D29E497DA005205B5 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				1971D51029E497F5005205B5 /* CallingAnAPI.swift */,
+				1971D51229E497F9005205B5 /* Models */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		1971D50E29E497DF005205B5 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				1971D51529E498B5005205B5 /* LottieView.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		1971D50F29E497E2005205B5 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1971D51729E498BB005205B5 /* NavigationManagerView.swift */,
+				1971D51929E498BE005205B5 /* NavigationRoutes.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		1971D51229E497F9005205B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1971D51329E49802005205B5 /* RandomUserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		19A3151229E60C3600612E9F /* RandomUser */ = {
+			isa = PBXGroup;
+			children = (
+				19A3151329E60C5000612E9F /* RandomUserView.swift */,
+				19A3151929E612B300612E9F /* RandomUserViewModel.swift */,
+			);
+			path = RandomUser;
+			sourceTree = "<group>";
+		};
+		19A3151B29E61AF800612E9F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1971D4FD29E494DE005205B5 /* EnvironmentConstants.swift */,
+				19A3151C29E61B1300612E9F /* RandonUserBaseURL.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,12 +250,18 @@
 				19204CD329E469E5007CD6BB /* Sources */,
 				19204CD429E469E5007CD6BB /* Frameworks */,
 				19204CD529E469E5007CD6BB /* Resources */,
+				19A3151F29E61CFC00612E9F /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TestingIOSApp;
+			packageProductDependencies = (
+				1971D51C29E49B40005205B5 /* Alamofire */,
+				1971D51F29E49B53005205B5 /* Lottie */,
+				19A3151629E611EA00612E9F /* Kingfisher */,
+			);
 			productName = TestingIOSApp;
 			productReference = 19204CD729E469E5007CD6BB /* TestingIOSApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +334,11 @@
 				Base,
 			);
 			mainGroup = 19204CCE29E469E5007CD6BB;
+			packageReferences = (
+				1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 19204CD829E469E5007CD6BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +357,7 @@
 			files = (
 				19204CE329E469E6007CD6BB /* Preview Assets.xcassets in Resources */,
 				19204CDF29E469E6007CD6BB /* Assets.xcassets in Resources */,
+				1971D50B29E497B8005205B5 /* planets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +377,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19A3151F29E61CFC00612E9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19204CD329E469E5007CD6BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19204CDD29E469E5007CD6BB /* ContentView.swift in Sources */,
-				19204CDB29E469E5007CD6BB /* TestingIOSAppApp.swift in Sources */,
+				1971D52229E49CD6005205B5 /* TestingIOSAppApp.swift in Sources */,
+				19A3151D29E61B1300612E9F /* RandonUserBaseURL.swift in Sources */,
+				1971D50329E494DE005205B5 /* EnvironmentConstants.swift in Sources */,
+				19A3151429E60C5000612E9F /* RandomUserView.swift in Sources */,
+				1971D51A29E498BE005205B5 /* NavigationRoutes.swift in Sources */,
+				1971D51429E49802005205B5 /* RandomUserModel.swift in Sources */,
+				1971D50029E494DE005205B5 /* MainView.swift in Sources */,
+				1971D51829E498BB005205B5 /* NavigationManagerView.swift in Sources */,
+				19A3151A29E612B300612E9F /* RandomUserViewModel.swift in Sources */,
+				1971D51629E498B5005205B5 /* LottieView.swift in Sources */,
+				1971D51129E497F5005205B5 /* CallingAnAPI.swift in Sources */,
+				1971D50129E494DE005205B5 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +582,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roncuevas.TestingIOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,10 +620,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roncuevas.TestingIOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -612,6 +765,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1971D51C29E49B40005205B5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1971D51F29E49B53005205B5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		19A3151629E611EA00612E9F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19204CCF29E469E5007CD6BB /* Project object */;
 }

@@ -11,6 +11,7 @@ import Alamofire
 class RandomUserViewModel: ObservableObject {
     
     @Published var response: RandomUserModel?
+    @Published var isLoading: Bool = true
     
     var fullName: String {
         guard let name = self.response?.results.first?.name else { return "" }
@@ -22,11 +23,14 @@ class RandomUserViewModel: ObservableObject {
     }
         
     func getRandomUser() {
+        self.isLoading = true
+        
         AF.request(RandomUserConstants.baseURL,
                    interceptor: CustomInterceptor())
             .responseDecodable(of: RandomUserModel.self) { response in
                 if response.error == nil {
                     self.response = response.value
+                    self.isLoading = false
                 } else {
                     debugPrint(response)
                 }

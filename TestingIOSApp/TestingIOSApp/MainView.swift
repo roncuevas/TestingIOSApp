@@ -12,10 +12,8 @@ struct MainView: View {
     @EnvironmentObject var navigationManager: NavigationManager
         
     var body: some View {
-        NavigationView {
-            VStack {
-                FastCustomButtonView(route: .randomUserView, text: "RandomUserView")
-            }
+        List {
+            FastCustomButtonView(route: .randomUserView, text: "Random User View")
         }
     }
 }

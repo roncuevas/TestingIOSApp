@@ -9,5 +9,9 @@ import Foundation
 
 struct RandomUserConstants {
     
+    // MARK: Generals
+    static var loaderName = "loader4"
+    
+    // MARK: URLS and APIS
     static var baseURL = "https://api.randomuser.me"
 }

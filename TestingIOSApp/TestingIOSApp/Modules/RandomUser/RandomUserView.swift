@@ -9,22 +9,35 @@ import SwiftUI
 import Kingfisher
 
 struct RandomUserView: View {
-    @State var headerText: String = "Hola mundo, como estas este es el header"
+    
+    @StateObject var viewModel: RandomUserViewModel = RandomUserViewModel()
     
     var body: some View {
         VStack {
-            HStack(alignment: .top) {
-                Image(systemName: "person.fill")
+            HStack {
+                KFImage(URL(string: viewModel.picture))
+                    .placeholder({ _ in
+                        Image(systemName: "person.fill")
+                            .resizable()
+                            .frame(width: 70, height: 70)
+                    })
                     .resizable()
                     .frame(width: 100, height: 100)
+                Spacer()
                 VStack {
-                    Text("John Doe")
+                    Text(viewModel.fullName)
+                        .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                    TextEditor(text: $headerText)
+                    Text("")
                 }
+                Spacer()
             }
+            Spacer()
         }
         .padding(10)
+        .onAppear {
+            viewModel.getRandomUser()
+        }
     }
 }
 

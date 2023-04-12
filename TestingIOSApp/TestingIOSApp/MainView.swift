@@ -10,22 +10,33 @@ import SwiftUI
 struct MainView: View {
     
     @EnvironmentObject var navigationManager: NavigationManager
-    
-    private let viewModel: RandomUserViewModel = RandomUserViewModel()
-    
+        
     var body: some View {
         NavigationView {
             VStack {
-                Button {
-                    navigationManager.path.append(NavigationRoute.splashScreenView)
-                } label: {
-                    Text("SplashScreen")
-                }
+                FastCustomButtonView(route: .randomUserView, text: "RandomUserView")
+            }
+        }
+    }
+}
 
-            }
-            .onAppear {
-                viewModel.getRandomUser()
-            }
+struct FastCustomButtonView: View {
+    
+    @EnvironmentObject var navigationManager: NavigationManager
+    
+    private var route: NavigationRoute
+    private var text: String
+    
+    init (route: NavigationRoute, text: String) {
+        self.route = route
+        self.text = text
+    }
+    
+    var body: some View {
+        Button {
+            navigationManager.path.append(route)
+        } label: {
+            Text(text)
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  RandonUserBaseURL.swift
+//  RandomUserConstants.swift
 //  TestingIOSApp
 //
 //  Created by Aarón Alberto Martínez Cuevas on 11/04/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RandonUserBaseURL {
+struct RandomUserConstants {
     
-    static var baseURL = "https://"
+    static var baseURL = "https://api.randomuser.me"
 }

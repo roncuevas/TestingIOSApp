@@ -46,14 +46,15 @@ struct RandomUserDob: Codable {
 
 // MARK: - ID
 struct RandomUserID: Codable {
-    let name, value: String
+    let name: String
+    let value: String?
 }
 
 // MARK: - Location
 struct RandomUserLocation: Codable {
     let street: RandomUserStreet
     let city, state, country: String
-    let postcode: Int
+    let postcode: Int?
     let coordinates: RandomUserCoordinates
     let timezone: RandomUserTimezone
 }

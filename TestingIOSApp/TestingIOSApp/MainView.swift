@@ -11,7 +11,7 @@ struct MainView: View {
     
     @EnvironmentObject var navigationManager: NavigationManager
     
-    private let alamo: CallingAnAPI = CallingAnAPI()
+    private let viewModel: RandomUserViewModel = RandomUserViewModel()
     
     var body: some View {
         NavigationView {
@@ -24,7 +24,7 @@ struct MainView: View {
 
             }
             .onAppear {
-                alamo.getRandomUser()
+                viewModel.getRandomUser()
             }
         }
     }

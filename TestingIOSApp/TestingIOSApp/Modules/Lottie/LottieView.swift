@@ -21,7 +21,7 @@ struct LottieView: UIViewRepresentable {
         animationView.animation = LottieAnimation.named(name)
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = loopMode
-        animationView.play { finished in
+        animationView.play { _ in
             withAnimation {
                 animationFinished = true
             }

@@ -9,7 +9,7 @@ import Foundation
 
 enum Environment {
     case development
-    case qa
+    case qualityAssurance
     case production
 }
 
@@ -22,5 +22,3 @@ struct EnvironmentConstants {
     static var splashScreenTime: Double = 2
     
 }
-
-

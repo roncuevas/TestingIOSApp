@@ -9,10 +9,10 @@ import Foundation
 import Alamofire
 
 class CallingAnAPI {
-    func getRandomUser() {
+    func getRandomUser(success: @escaping (_ response: RandomUserModel?) -> Void) {
         AF.request("https://api.randomuser.me")
             .responseDecodable(of: RandomUserModel.self) { response in
-                debugPrint(response.value)
+                success(response.value)
             }
     }
 }

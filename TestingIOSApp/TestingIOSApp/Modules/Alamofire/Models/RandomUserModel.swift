@@ -13,79 +13,79 @@ import Foundation
 
 // MARK: - Welcome
 struct RandomUserModel: Codable {
-    let results: [Result]
-    let info: Info
+    let results: [RandomUserResult]
+    let info: RandomUserInfo
 }
 
 // MARK: - Info
-struct Info: Codable {
+struct RandomUserInfo: Codable {
     let seed: String
     let results, page: Int
     let version: String
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct RandomUserResult: Codable {
     let gender: String
-    let name: Name
-    let location: Location
+    let name: RandomUserName
+    let location: RandomUserLocation
     let email: String
-    let login: Login
-    let dob, registered: Dob
+    let login: RandomUserLogin
+    let dob, registered: RandomUserDob
     let phone, cell: String
-    let id: ID
-    let picture: Picture
+    let id: RandomUserID
+    let picture: RandomUserPicture
     let nat: String
 }
 
 // MARK: - Dob
-struct Dob: Codable {
+struct RandomUserDob: Codable {
     let date: String
     let age: Int
 }
 
 // MARK: - ID
-struct ID: Codable {
+struct RandomUserID: Codable {
     let name, value: String
 }
 
 // MARK: - Location
-struct Location: Codable {
-    let street: Street
+struct RandomUserLocation: Codable {
+    let street: RandomUserStreet
     let city, state, country: String
     let postcode: Int
-    let coordinates: Coordinates
-    let timezone: Timezone
+    let coordinates: RandomUserCoordinates
+    let timezone: RandomUserTimezone
 }
 
 // MARK: - Coordinates
-struct Coordinates: Codable {
+struct RandomUserCoordinates: Codable {
     let latitude, longitude: String
 }
 
 // MARK: - Street
-struct Street: Codable {
+struct RandomUserStreet: Codable {
     let number: Int
     let name: String
 }
 
 // MARK: - Timezone
-struct Timezone: Codable {
+struct RandomUserTimezone: Codable {
     let offset, description: String
 }
 
 // MARK: - Login
-struct Login: Codable {
+struct RandomUserLogin: Codable {
     let uuid, username, password, salt: String
     let md5, sha1, sha256: String
 }
 
 // MARK: - Name
-struct Name: Codable {
+struct RandomUserName: Codable {
     let title, first, last: String
 }
 
 // MARK: - Picture
-struct Picture: Codable {
+struct RandomUserPicture: Codable {
     let large, medium, thumbnail: String
 }

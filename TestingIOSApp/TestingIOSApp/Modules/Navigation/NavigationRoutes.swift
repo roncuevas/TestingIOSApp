@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum NavigationRoute: Hashable{
+enum NavigationRoute: Hashable {
     case splashScreenView
     case mainView
     
@@ -21,7 +21,3 @@ enum NavigationRoute: Hashable{
         }
     }
 }
-
-
-
-

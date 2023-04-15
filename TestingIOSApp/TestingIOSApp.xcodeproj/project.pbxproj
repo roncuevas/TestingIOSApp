@@ -38,6 +38,9 @@
 		19B0A69929E72A0F006C352F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 19B0A69829E72A0F006C352F /* RealmSwift */; };
 		19D5B7FF29E84DD8009CA6A4 /* RandomUserRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B7FE29E84DD8009CA6A4 /* RandomUserRealmModel.swift */; };
 		19D5B80229E890BD009CA6A4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80129E890BD009CA6A4 /* RealmManager.swift */; };
+		19D5B80529EAD42F009CA6A4 /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80429EAD42F009CA6A4 /* ChatGPTView.swift */; };
+		19D5B80729EAD455009CA6A4 /* ChatGPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80629EAD455009CA6A4 /* ChatGPTViewModel.swift */; };
+		19D5B80A29EAD562009CA6A4 /* ChatGPTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80929EAD562009CA6A4 /* ChatGPTNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		19A3151C29E61B1300612E9F /* RandomUserConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserConstants.swift; sourceTree = "<group>"; };
 		19D5B7FE29E84DD8009CA6A4 /* RandomUserRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRealmModel.swift; sourceTree = "<group>"; };
 		19D5B80129E890BD009CA6A4 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		19D5B80429EAD42F009CA6A4 /* ChatGPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTView.swift; sourceTree = "<group>"; };
+		19D5B80629EAD455009CA6A4 /* ChatGPTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTViewModel.swift; sourceTree = "<group>"; };
+		19D5B80929EAD562009CA6A4 /* ChatGPTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +218,7 @@
 		1971D50C29E497D5005205B5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				19D5B80329EAD41D009CA6A4 /* ChatGPT */,
 				1971D50D29E497DA005205B5 /* Alamofire */,
 				1971D50E29E497DF005205B5 /* Lottie */,
 				196C269429E68CF500F6DBFB /* Modifiers */,
@@ -274,6 +281,16 @@
 				19D5B80129E890BD009CA6A4 /* RealmManager.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		19D5B80329EAD41D009CA6A4 /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				19D5B80429EAD42F009CA6A4 /* ChatGPTView.swift */,
+				19D5B80629EAD455009CA6A4 /* ChatGPTViewModel.swift */,
+				19D5B80929EAD562009CA6A4 /* ChatGPTNetwork.swift */,
+			);
+			path = ChatGPT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,9 +473,12 @@
 				1971D50029E494DE005205B5 /* MainView.swift in Sources */,
 				1971D51829E498BB005205B5 /* NavigationManagerView.swift in Sources */,
 				19D5B80229E890BD009CA6A4 /* RealmManager.swift in Sources */,
+				19D5B80A29EAD562009CA6A4 /* ChatGPTNetwork.swift in Sources */,
 				19A3151A29E612B300612E9F /* RandomUserViewModel.swift in Sources */,
 				1971D51629E498B5005205B5 /* LottieView.swift in Sources */,
+				19D5B80729EAD455009CA6A4 /* ChatGPTViewModel.swift in Sources */,
 				196C269629E68D1F00F6DBFB /* ViewExtension.swift in Sources */,
+				19D5B80529EAD42F009CA6A4 /* ChatGPTView.swift in Sources */,
 				1971D51129E497F5005205B5 /* CallingAnAPI.swift in Sources */,
 				196C269329E6592700F6DBFB /* CustomInterceptor.swift in Sources */,
 				1971D50129E494DE005205B5 /* SplashScreenView.swift in Sources */,

@@ -36,6 +36,8 @@
 		19A3151D29E61B1300612E9F /* RandomUserConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A3151C29E61B1300612E9F /* RandomUserConstants.swift */; };
 		19B0A69729E72A0F006C352F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 19B0A69629E72A0F006C352F /* Realm */; };
 		19B0A69929E72A0F006C352F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 19B0A69829E72A0F006C352F /* RealmSwift */; };
+		19D5B7FF29E84DD8009CA6A4 /* RandomUserRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B7FE29E84DD8009CA6A4 /* RandomUserRealmModel.swift */; };
+		19D5B80229E890BD009CA6A4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80129E890BD009CA6A4 /* RealmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		19A3151329E60C5000612E9F /* RandomUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserView.swift; sourceTree = "<group>"; };
 		19A3151929E612B300612E9F /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
 		19A3151C29E61B1300612E9F /* RandomUserConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserConstants.swift; sourceTree = "<group>"; };
+		19D5B7FE29E84DD8009CA6A4 /* RandomUserRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRealmModel.swift; sourceTree = "<group>"; };
+		19D5B80129E890BD009CA6A4 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +127,6 @@
 				19204CEB29E469E7007CD6BB /* TestingIOSAppTests */,
 				19204CF529E469E7007CD6BB /* TestingIOSAppUITests */,
 				19204CD829E469E5007CD6BB /* Products */,
-				62B1AD5D92FB80F2A32204A6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,6 +217,7 @@
 				196C269429E68CF500F6DBFB /* Modifiers */,
 				1971D50F29E497E2005205B5 /* Navigation */,
 				19A3151229E60C3600612E9F /* RandomUser */,
+				19D5B7FC29E84D52009CA6A4 /* Realm */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -263,11 +267,13 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		62B1AD5D92FB80F2A32204A6 /* Pods */ = {
+		19D5B7FC29E84D52009CA6A4 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				19D5B7FE29E84DD8009CA6A4 /* RandomUserRealmModel.swift */,
+				19D5B80129E890BD009CA6A4 /* RealmManager.swift */,
 			);
-			path = Pods;
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,10 +373,10 @@
 			);
 			mainGroup = 19204CCE29E469E5007CD6BB;
 			packageReferences = (
-				1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
-				1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm.git" */,
-				19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
-				19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift.git" */,
+				1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 19204CD829E469E5007CD6BB /* Products */;
 			projectDirPath = "";
@@ -444,10 +450,12 @@
 				19A3151D29E61B1300612E9F /* RandomUserConstants.swift in Sources */,
 				1971D50329E494DE005205B5 /* EnvironmentConstants.swift in Sources */,
 				19A3151429E60C5000612E9F /* RandomUserView.swift in Sources */,
+				19D5B7FF29E84DD8009CA6A4 /* RandomUserRealmModel.swift in Sources */,
 				1971D51A29E498BE005205B5 /* NavigationRoutes.swift in Sources */,
 				1971D51429E49802005205B5 /* RandomUserModel.swift in Sources */,
 				1971D50029E494DE005205B5 /* MainView.swift in Sources */,
 				1971D51829E498BB005205B5 /* NavigationManagerView.swift in Sources */,
+				19D5B80229E890BD009CA6A4 /* RealmManager.swift in Sources */,
 				19A3151A29E612B300612E9F /* RandomUserViewModel.swift in Sources */,
 				1971D51629E498B5005205B5 /* LottieView.swift in Sources */,
 				196C269629E68D1F00F6DBFB /* ViewExtension.swift in Sources */,
@@ -815,7 +823,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -823,7 +831,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm.git" */ = {
+		1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
 			requirement = {
@@ -831,7 +839,7 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -839,7 +847,7 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
+		19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -852,27 +860,27 @@
 /* Begin XCSwiftPackageProductDependency section */
 		1971D51C29E49B40005205B5 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = 1971D51B29E49B40005205B5 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 		1971D51F29E49B53005205B5 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm.git" */;
+			package = 1971D51E29E49B53005205B5 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
 		};
 		19A3151629E611EA00612E9F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			package = 19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 		19B0A69629E72A0F006C352F /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift.git" */;
+			package = 19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
 		19B0A69829E72A0F006C352F /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift.git" */;
+			package = 19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

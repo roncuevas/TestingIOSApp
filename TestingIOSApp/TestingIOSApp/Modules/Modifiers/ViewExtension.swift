@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension View {
-    func addLoader(show: Binding<Bool>, frame: CGSize) -> some View {
+    func addLoader(show: Binding<Bool>, frame: CGSize = CGSize(width: 100, height: 100)) -> some View {
         modifier(LoaderView(show: show, frame: frame))
     }
 }

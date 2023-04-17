@@ -13,6 +13,10 @@
 		19204CF729E469E7007CD6BB /* TestingIOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CF629E469E7007CD6BB /* TestingIOSAppUITests.swift */; };
 		19204CF929E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CF829E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift */; };
 		196387F029EAD84D0053D11C /* ChopoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196387EF29EAD84D0053D11C /* ChopoNetwork.swift */; };
+		196387F229EADB730053D11C /* RandomUserDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196387F129EADB730053D11C /* RandomUserDatabase.swift */; };
+		196387F629EAEB440053D11C /* RandomUserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196387F529EAEB440053D11C /* RandomUserAdapter.swift */; };
+		196387F929EC354D0053D11C /* RandomUsersSavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196387F829EC354D0053D11C /* RandomUsersSavedView.swift */; };
+		196387FC29EC4A8C0053D11C /* RandomUsersSavedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196387FB29EC4A8C0053D11C /* RandomUsersSavedViewModel.swift */; };
 		196C269329E6592700F6DBFB /* CustomInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196C269229E6592700F6DBFB /* CustomInterceptor.swift */; };
 		196C269629E68D1F00F6DBFB /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196C269529E68D1F00F6DBFB /* ViewExtension.swift */; };
 		196C269829E68E6D00F6DBFB /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 196C269729E68E6D00F6DBFB /* loader.json */; };
@@ -72,6 +76,10 @@
 		19204CF629E469E7007CD6BB /* TestingIOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIOSAppUITests.swift; sourceTree = "<group>"; };
 		19204CF829E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		196387EF29EAD84D0053D11C /* ChopoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChopoNetwork.swift; sourceTree = "<group>"; };
+		196387F129EADB730053D11C /* RandomUserDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDatabase.swift; sourceTree = "<group>"; };
+		196387F529EAEB440053D11C /* RandomUserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAdapter.swift; sourceTree = "<group>"; };
+		196387F829EC354D0053D11C /* RandomUsersSavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersSavedView.swift; sourceTree = "<group>"; };
+		196387FB29EC4A8C0053D11C /* RandomUsersSavedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersSavedViewModel.swift; sourceTree = "<group>"; };
 		196C269229E6592700F6DBFB /* CustomInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterceptor.swift; sourceTree = "<group>"; };
 		196C269529E68D1F00F6DBFB /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		196C269729E68E6D00F6DBFB /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
@@ -188,6 +196,25 @@
 			path = TestingIOSAppUITests;
 			sourceTree = "<group>";
 		};
+		196387F429EAEB1B0053D11C /* Persistency */ = {
+			isa = PBXGroup;
+			children = (
+				196387F129EADB730053D11C /* RandomUserDatabase.swift */,
+				19D5B7FE29E84DD8009CA6A4 /* RandomUserRealmModel.swift */,
+				196387F529EAEB440053D11C /* RandomUserAdapter.swift */,
+			);
+			path = Persistency;
+			sourceTree = "<group>";
+		};
+		196387F729EC35100053D11C /* Saved Users */ = {
+			isa = PBXGroup;
+			children = (
+				196387F829EC354D0053D11C /* RandomUsersSavedView.swift */,
+				196387FB29EC4A8C0053D11C /* RandomUsersSavedViewModel.swift */,
+			);
+			path = "Saved Users";
+			sourceTree = "<group>";
+		};
 		196C269429E68CF500F6DBFB /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +291,8 @@
 				19A3151329E60C5000612E9F /* RandomUserView.swift */,
 				19A3151929E612B300612E9F /* RandomUserViewModel.swift */,
 				1971D51329E49802005205B5 /* RandomUserModel.swift */,
+				196387F429EAEB1B0053D11C /* Persistency */,
+				196387F729EC35100053D11C /* Saved Users */,
 			);
 			path = RandomUser;
 			sourceTree = "<group>";
@@ -280,7 +309,6 @@
 		19D5B7FC29E84D52009CA6A4 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				19D5B7FE29E84DD8009CA6A4 /* RandomUserRealmModel.swift */,
 				19D5B80129E890BD009CA6A4 /* RealmManager.swift */,
 			);
 			path = Realm;
@@ -486,13 +514,17 @@
 				1971D51829E498BB005205B5 /* NavigationManagerView.swift in Sources */,
 				19D5B80229E890BD009CA6A4 /* RealmManager.swift in Sources */,
 				19D5B80A29EAD562009CA6A4 /* ChatGPTNetwork.swift in Sources */,
+				196387FC29EC4A8C0053D11C /* RandomUsersSavedViewModel.swift in Sources */,
 				19A3151A29E612B300612E9F /* RandomUserViewModel.swift in Sources */,
+				196387F929EC354D0053D11C /* RandomUsersSavedView.swift in Sources */,
 				1971D51629E498B5005205B5 /* LottieView.swift in Sources */,
 				19D5B80729EAD455009CA6A4 /* ChatGPTViewModel.swift in Sources */,
 				196C269629E68D1F00F6DBFB /* ViewExtension.swift in Sources */,
 				19D5B80529EAD42F009CA6A4 /* ChatGPTView.swift in Sources */,
+				196387F629EAEB440053D11C /* RandomUserAdapter.swift in Sources */,
 				1971D51129E497F5005205B5 /* CallingAnAPI.swift in Sources */,
 				196C269329E6592700F6DBFB /* CustomInterceptor.swift in Sources */,
+				196387F229EADB730053D11C /* RandomUserDatabase.swift in Sources */,
 				1971D50129E494DE005205B5 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

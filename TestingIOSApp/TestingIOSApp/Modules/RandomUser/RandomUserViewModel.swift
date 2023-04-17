@@ -36,4 +36,13 @@ class RandomUserViewModel: ObservableObject {
                 }
             }
     }
+    
+    func saveRandomUser() {
+        guard let response = response?.results.first else { return }
+        let dbManager = RandomUserDatabase()
+        let user = RandomUserRealmModel(gender: response.gender, name: self.fullName,
+                                        email: response.email, phone: response.phone,
+                                        large: response.picture.large, response: self.response?.toData())
+        dbManager.writeRandomUser(user: user)
+    }
 }

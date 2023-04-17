@@ -13,6 +13,10 @@ class RandomUserViewModel: ObservableObject {
     @Published var response: RandomUserModel?
     @Published var isLoading: Bool = true
     
+    var first: RandomUserResult? {
+        return self.response?.results.first
+    }
+    
     var fullName: String {
         guard let name = self.response?.results.first?.name else { return "" }
         return "\(name.first) \(name.last)"
@@ -20,6 +24,10 @@ class RandomUserViewModel: ObservableObject {
     
     var picture: String {
         return self.response?.results.first?.picture.large ?? ""
+    }
+    
+    var gender: String {
+        return self.response?.results.first?.gender ?? ""
     }
         
     func getRandomUser() {

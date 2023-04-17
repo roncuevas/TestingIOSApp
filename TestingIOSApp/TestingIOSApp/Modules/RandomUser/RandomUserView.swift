@@ -14,22 +14,27 @@ struct RandomUserView: View {
     @EnvironmentObject var navigationManager: NavigationManager
     @StateObject var viewModel: RandomUserViewModel = RandomUserViewModel()
     @State var imageLoading: Bool = false
+    @State var imagePreview: Bool =  false
     
     var body: some View {
         VStack {
             ScrollView {
                 VStack {
                     Spacer()
-                    KFImage(URL(string: viewModel.picture))
-                        .placeholder({ _ in
-                            LottieView(animationFinished: $imageLoading, name: "loader3", loopMode: .loop)
-                                .frame(width: 70, height: 70)
-                        })
-                        .resizable()
-                        .frame(width: 100, height: 100)
-                        .clipShape(Circle())
+                    Button {
+                        imagePreview = true
+                    } label: {
+                        KFImage(URL(string: viewModel.picture))
+                            .placeholder({ _ in
+                                LottieView(animationFinished: $imageLoading, name: "loader3", loopMode: .loop)
+                                    .frame(width: 80, height: 80)
+                            })
+                            .resizable()
+                            .frame(width: 130, height: 130)
+                            .clipShape(Circle())
+                    }
                     Spacer()
-                    Text(viewModel.fullName)
+                    Text("\(viewModel.fullName) \(viewModel.gender == "male" ? "♂" : "♀")")
                         .font(.system(size: 24))
                         .fontWeight(.bold)
                         .padding(.bottom, 4)
@@ -57,7 +62,7 @@ struct RandomUserView: View {
                             .padding()
                             .background(
                                 RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.accentColor)
+                                    .foregroundColor(.red)
                             )
                             .cornerRadius(25)
                     }
@@ -88,7 +93,7 @@ struct RandomUserView: View {
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.accentColor)
+                                .foregroundColor(.orange)
                         )
                         .cornerRadius(25)
                 }
@@ -97,9 +102,20 @@ struct RandomUserView: View {
         }
         .padding(16)
         .addLoader(show: $viewModel.isLoading, frame: CGSize(width: 200, height: 200))
-        .navigationTitle(viewModel.fullName)
+        .navigationTitle("Home")
         .onAppear {
             viewModel.getRandomUser()
+        }
+        .sheet(isPresented: $imagePreview) {
+            HStack {
+                KFImage(URL(string: viewModel.picture))
+                    .placeholder({ _ in
+                        LottieView(animationFinished: $imageLoading, name: "loader3", loopMode: .loop)
+                            .frame(width: 80, height: 80)
+                    })
+                    .resizable()
+                    .scaledToFit()
+            }
         }
     }
 }

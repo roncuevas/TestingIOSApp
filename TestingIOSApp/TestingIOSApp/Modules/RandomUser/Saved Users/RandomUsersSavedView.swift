@@ -24,6 +24,7 @@ struct RandomUsersSavedView: View {
                         Spacer()
                         Text(user.name)
                             .font(.system(size: 18))
+                            .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                         Spacer()
                     }

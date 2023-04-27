@@ -31,4 +31,16 @@ struct NavigationManagerView<RootView: View>: View {
 
 class NavigationManager: ObservableObject {
     @Published var path: NavigationPath = NavigationPath()
+    
+    func push(_ route: NavigationRoute) {
+        path.append(route)
+    }
+    
+    func popToRoot() {
+        path.removeLast(path.count)
+    }
+    
+    func popToCount(numbers: Int) {
+        path.removeLast(numbers)
+    }
 }

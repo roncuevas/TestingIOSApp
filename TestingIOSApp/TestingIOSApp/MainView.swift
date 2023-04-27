@@ -30,7 +30,7 @@ struct FastCustomButtonView: View {
     
     var body: some View {
         Button {
-            navigationManager.path.append(route)
+            navigationManager.push(route)
         } label: {
             Text(text)
         }

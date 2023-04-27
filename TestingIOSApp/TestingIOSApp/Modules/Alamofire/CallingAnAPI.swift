@@ -16,8 +16,8 @@ class CallingAnAPI {
             }
     }
     
-    func getRandomUserAsync() async throws {
-        async let value = try AF.request("https://api.randomuser.me").serializingDecodable(RandomUserModel.self).value
-        
+    func getRandomUserAsync() async throws -> RandomUserModel {
+        let value = try await AF.request("https://api.randomuser.me").serializingDecodable(RandomUserModel.self).value
+        return value
     }
 }

@@ -262,7 +262,6 @@
 		1971D50C29E497D5005205B5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				19B826F929FA36680099BDD2 /* ViewBuilders */,
 				1971D50D29E497DA005205B5 /* Alamofire */,
 				19D5B80329EAD41D009CA6A4 /* ChatGPT */,
 				19D5B80C29EAD700009CA6A4 /* Chopo */,
@@ -273,6 +272,7 @@
 				19A3151229E60C3600612E9F /* RandomUser */,
 				19D5B7FC29E84D52009CA6A4 /* Realm */,
 				19B826F329F9D8E40099BDD2 /* TestingModifiers */,
+				19B826F929FA36680099BDD2 /* ViewBuilders */,
 			);
 			path = Modules;
 			sourceTree = "<group>";

@@ -13,6 +13,7 @@ enum NavigationRoute: Hashable {
     case mainView
     case randomUserView
     case randomUserSavedView
+    case testingModifiers
     
     func associatedView() -> AnyView {
         switch self {
@@ -24,6 +25,8 @@ enum NavigationRoute: Hashable {
             return AnyView(RandomUserView())
         case .randomUserSavedView:
             return AnyView(RandomUsersSavedView())
+        case .testingModifiers:
+            return AnyView(TestingModifiers())
         }
     }
 }

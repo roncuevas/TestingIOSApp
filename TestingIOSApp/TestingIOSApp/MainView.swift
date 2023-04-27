@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
-    
-    @EnvironmentObject var navigationManager: NavigationManager
-        
     var body: some View {
         List {
             FastCustomButtonView(route: .randomUserView, text: "Random User View")
+            FastCustomButtonView(route: .testingModifiers, text: "Testing Modifiers View")
         }
     }
 }

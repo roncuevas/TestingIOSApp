@@ -26,7 +26,15 @@ final class TestingIOSAppUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
+        sleep(3)
+        let randomUserButtonName = "Random User View"
+        let randomUser = app.collectionViews.buttons[randomUserButtonName]
+        _ = randomUser.waitForExistence(timeout: 5)
+        randomUser.tap()
+        app.buttons["New"].tap()
+        app.buttons["Save"].tap()
+        let backButton = app.navigationBars["Home"].buttons["Back"]
+        XCTAssert(backButton.exists)
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 

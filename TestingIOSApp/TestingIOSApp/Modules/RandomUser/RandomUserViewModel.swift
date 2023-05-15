@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Alamofire
 
 class RandomUserViewModel: ObservableObject {
     
@@ -28,21 +27,6 @@ class RandomUserViewModel: ObservableObject {
     
     var gender: String {
         return self.response?.results.first?.gender ?? ""
-    }
-        
-    func getRandomUser() {
-        self.isLoading = true
-        
-        AF.request(RandomUserConstants.baseURL,
-                   interceptor: CustomInterceptor())
-            .responseDecodable(of: RandomUserModel.self) { response in
-                if response.error == nil {
-                    self.response = response.value
-                    self.isLoading = false
-                } else {
-                    debugPrint(response)
-                }
-            }
     }
     
     func saveRandomUser() {

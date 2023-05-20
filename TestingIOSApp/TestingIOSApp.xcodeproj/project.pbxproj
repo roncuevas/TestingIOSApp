@@ -12,6 +12,7 @@
 		19204CED29E469E7007CD6BB /* TestingIOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CEC29E469E7007CD6BB /* TestingIOSAppTests.swift */; };
 		19204CF729E469E7007CD6BB /* TestingIOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CF629E469E7007CD6BB /* TestingIOSAppUITests.swift */; };
 		19204CF929E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19204CF829E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift */; };
+		1958A6632A17C1E1009E5996 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958A6622A17C1E1009E5996 /* CarouselView.swift */; };
 		196387F029EAD84D0053D11C /* ChopoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196387EF29EAD84D0053D11C /* ChopoNetwork.swift */; };
 		196387F229EADB730053D11C /* RandomUserDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196387F129EADB730053D11C /* RandomUserDatabase.swift */; };
 		196387F629EAEB440053D11C /* RandomUserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196387F529EAEB440053D11C /* RandomUserAdapter.swift */; };
@@ -84,6 +85,7 @@
 		19204CF229E469E7007CD6BB /* TestingIOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingIOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19204CF629E469E7007CD6BB /* TestingIOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIOSAppUITests.swift; sourceTree = "<group>"; };
 		19204CF829E469E7007CD6BB /* TestingIOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingIOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1958A6622A17C1E1009E5996 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		196387EF29EAD84D0053D11C /* ChopoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChopoNetwork.swift; sourceTree = "<group>"; };
 		196387F129EADB730053D11C /* RandomUserDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDatabase.swift; sourceTree = "<group>"; };
 		196387F529EAEB440053D11C /* RandomUserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAdapter.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				1971D4FA29E494DE005205B5 /* MainView.swift */,
 				19A3151B29E61AF800612E9F /* Constants */,
 				1971D50C29E497D5005205B5 /* Modules */,
+				1958A6602A17BF2F009E5996 /* Utils */,
 				1971D50629E49763005205B5 /* Assets */,
 				19204CE129E469E6007CD6BB /* Preview Content */,
 			);
@@ -223,6 +226,27 @@
 				19BE48B42A158C4000282116 /* AsyncNetworkCall.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1958A6602A17BF2F009E5996 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19D5B7FC29E84D52009CA6A4 /* Realm */,
+				1971D50D29E497DA005205B5 /* Alamofire */,
+				19D5B80C29EAD700009CA6A4 /* Chopo */,
+				1971D50E29E497DF005205B5 /* Lottie */,
+				1971D50F29E497E2005205B5 /* Navigation */,
+				19580A462A11FD500092553A /* Network */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1958A6612A17C1BD009E5996 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				1958A6622A17C1E1009E5996 /* CarouselView.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 		196387F429EAEB1B0053D11C /* Persistency */ = {
@@ -300,16 +324,11 @@
 		1971D50C29E497D5005205B5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				19580A462A11FD500092553A /* Network */,
-				1971D50D29E497DA005205B5 /* Alamofire */,
+				1958A6612A17C1BD009E5996 /* Carousel */,
 				19D5B80329EAD41D009CA6A4 /* ChatGPT */,
-				19D5B80C29EAD700009CA6A4 /* Chopo */,
-				1971D50E29E497DF005205B5 /* Lottie */,
 				196C269429E68CF500F6DBFB /* Modifiers */,
-				1971D50F29E497E2005205B5 /* Navigation */,
 				196387FD29ED12AC0053D11C /* Publishers */,
 				19A3151229E60C3600612E9F /* RandomUser */,
-				19D5B7FC29E84D52009CA6A4 /* Realm */,
 				19B826F329F9D8E40099BDD2 /* TestingModifiers */,
 				19B826F929FA36680099BDD2 /* ViewBuilders */,
 			);
@@ -616,6 +635,7 @@
 				1971D51A29E498BE005205B5 /* NavigationRoutes.swift in Sources */,
 				1971D51429E49802005205B5 /* RandomUserModel.swift in Sources */,
 				1971D50029E494DE005205B5 /* MainView.swift in Sources */,
+				1958A6632A17C1E1009E5996 /* CarouselView.swift in Sources */,
 				1971D51829E498BB005205B5 /* NavigationManagerView.swift in Sources */,
 				19D5B80229E890BD009CA6A4 /* RealmManager.swift in Sources */,
 				19D5B80A29EAD562009CA6A4 /* ChatGPTNetwork.swift in Sources */,

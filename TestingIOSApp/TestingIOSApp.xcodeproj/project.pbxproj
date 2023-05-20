@@ -56,6 +56,7 @@
 		19D5B80529EAD42F009CA6A4 /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80429EAD42F009CA6A4 /* ChatGPTView.swift */; };
 		19D5B80729EAD455009CA6A4 /* ChatGPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80629EAD455009CA6A4 /* ChatGPTViewModel.swift */; };
 		19D5B80A29EAD562009CA6A4 /* ChatGPTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80929EAD562009CA6A4 /* ChatGPTNetwork.swift */; };
+		19F9CF912A191CE8000043B4 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9CF902A191CE8000043B4 /* CarouselViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		19D5B80429EAD42F009CA6A4 /* ChatGPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTView.swift; sourceTree = "<group>"; };
 		19D5B80629EAD455009CA6A4 /* ChatGPTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTViewModel.swift; sourceTree = "<group>"; };
 		19D5B80929EAD562009CA6A4 /* ChatGPTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTNetwork.swift; sourceTree = "<group>"; };
+		19F9CF902A191CE8000043B4 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				1958A6622A17C1E1009E5996 /* CarouselView.swift */,
+				19F9CF902A191CE8000043B4 /* CarouselViewModel.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -635,6 +638,7 @@
 				1971D51A29E498BE005205B5 /* NavigationRoutes.swift in Sources */,
 				1971D51429E49802005205B5 /* RandomUserModel.swift in Sources */,
 				1971D50029E494DE005205B5 /* MainView.swift in Sources */,
+				19F9CF912A191CE8000043B4 /* CarouselViewModel.swift in Sources */,
 				1958A6632A17C1E1009E5996 /* CarouselView.swift in Sources */,
 				1971D51829E498BB005205B5 /* NavigationManagerView.swift in Sources */,
 				19D5B80229E890BD009CA6A4 /* RealmManager.swift in Sources */,

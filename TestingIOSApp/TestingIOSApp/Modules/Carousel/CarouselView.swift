@@ -22,7 +22,7 @@ struct CarouselView: View {
             }
         }
         .task {
-            await viewModel.refreshImages(count: 21)
+            await viewModel.refreshImagesWithTaskGroup(count: 21)
         }
     }
 }

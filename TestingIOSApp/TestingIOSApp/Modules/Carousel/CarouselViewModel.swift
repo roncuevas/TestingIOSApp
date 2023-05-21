@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 class CarouselViewModel: ObservableObject {
     @Published var imagesArray = [ImageWrapper]()
 //    @Published var imagesArray: [ImageWrapper] = .init()
@@ -23,6 +24,23 @@ class CarouselViewModel: ObservableObject {
                 try await self.imagesArray.append(ImageWrapper(image: imageResponse))
             } catch let error {
                 print("Error \(error)")
+            }
+        }
+    }
+    
+    func refreshImagesWithTaskGroup(count: Int) async {
+        self.imagesArray.removeAll()
+        
+        try? await withThrowingTaskGroup(of: Image.self) { group in
+            // Adding tasks to the group
+            for _ in 0...count-1 {
+                group.addTask(priority: .medium) {
+                    try await self.network.getImage(from: "https://picsum.photos/200")
+                }
+            }
+            
+            for try await taskResult in group {
+                self.imagesArray.append(ImageWrapper(image: taskResult))
             }
         }
     }

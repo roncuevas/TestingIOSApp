@@ -57,6 +57,7 @@
 		19D5B80729EAD455009CA6A4 /* ChatGPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80629EAD455009CA6A4 /* ChatGPTViewModel.swift */; };
 		19D5B80A29EAD562009CA6A4 /* ChatGPTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80929EAD562009CA6A4 /* ChatGPTNetwork.swift */; };
 		19F9CF912A191CE8000043B4 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9CF902A191CE8000043B4 /* CarouselViewModel.swift */; };
+		EFA498B02A586B970099A53A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = EFA498AF2A586B970099A53A /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A3151729E611EA00612E9F /* Kingfisher in Frameworks */,
+				EFA498B02A586B970099A53A /* Apollo in Frameworks */,
 				1971D51D29E49B40005205B5 /* Alamofire in Frameworks */,
 				1971D52029E49B53005205B5 /* Lottie in Frameworks */,
 				196DB73F2A0892A900952516 /* RealmSwift in Frameworks */,
@@ -476,6 +478,7 @@
 				19A3151629E611EA00612E9F /* Kingfisher */,
 				19B0A69629E72A0F006C352F /* Realm */,
 				196DB73E2A0892A900952516 /* RealmSwift */,
+				EFA498AF2A586B970099A53A /* Apollo */,
 			);
 			productName = TestingIOSApp;
 			productReference = 19204CD729E469E5007CD6BB /* TestingIOSApp.app */;
@@ -559,6 +562,7 @@
 				19A3151529E611EA00612E9F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift" */,
 				19E1889F2A0A115A00BA61B9 /* XCRemoteSwiftPackageReference "SwiftFormat" */,
+				EFA498AE2A586B970099A53A /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 19204CD829E469E5007CD6BB /* Products */;
 			projectDirPath = "";
@@ -1062,6 +1066,14 @@
 				minimumVersion = 0.9.6;
 			};
 		};
+		EFA498AE2A586B970099A53A /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1099,6 +1111,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 19B0A69529E72A0F006C352F /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
+		};
+		EFA498AF2A586B970099A53A /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFA498AE2A586B970099A53A /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

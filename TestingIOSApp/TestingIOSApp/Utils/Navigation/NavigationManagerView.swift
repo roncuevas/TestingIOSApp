@@ -1,10 +1,3 @@
-//
-//  NavigationPresenter.swift
-//  iOS_Testing
-//
-//  Created by Aarón Alberto Martínez Cuevas on 09/04/23.
-//
-
 import SwiftUI
 
 /// Call this with "@EnvironmentObject var navigationManager: NavigationManager" and then append the new view with "navigationManager.path.append(_the view_)"

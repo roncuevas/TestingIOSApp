@@ -13,6 +13,7 @@ struct MainView: View {
             FastCustomButtonView(route: .randomUserView, text: "Random User View")
             FastCustomButtonView(route: .testingModifiers, text: "Testing Modifiers View")
             FastCustomButtonView(route: .carouselView, text: "Carousel View")
+            FastCustomButtonView(route: .scrappingView, text: "Scrapping View")
         }
     }
 }

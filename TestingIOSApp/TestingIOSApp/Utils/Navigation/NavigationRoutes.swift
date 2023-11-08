@@ -1,10 +1,3 @@
-//
-//  NavigationRoutes.swift
-//  iOS_Testing
-//
-//  Created by Aarón Alberto Martínez Cuevas on 09/04/23.
-//
-
 import Foundation
 import SwiftUI
 
@@ -15,6 +8,7 @@ enum NavigationRoute: Hashable {
     case randomUserSavedView
     case testingModifiers
     case carouselView
+    case scrappingView
     
     func associatedView() -> AnyView {
         switch self {
@@ -30,6 +24,8 @@ enum NavigationRoute: Hashable {
             return AnyView(TestingModifiers())
         case .carouselView:
             return AnyView(CarouselView())
+        case .scrappingView:
+            return AnyView(ScrappingView())
         }
     }
 }

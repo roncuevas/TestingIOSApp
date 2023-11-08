@@ -57,7 +57,11 @@
 		19D5B80729EAD455009CA6A4 /* ChatGPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80629EAD455009CA6A4 /* ChatGPTViewModel.swift */; };
 		19D5B80A29EAD562009CA6A4 /* ChatGPTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5B80929EAD562009CA6A4 /* ChatGPTNetwork.swift */; };
 		19F9CF912A191CE8000043B4 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9CF902A191CE8000043B4 /* CarouselViewModel.swift */; };
+		EF623A8E2A9BF43B00F683F0 /* ScrappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF623A8D2A9BF43B00F683F0 /* ScrappingView.swift */; };
+		EF623A912A9BF60700F683F0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF623A902A9BF60700F683F0 /* WebView.swift */; };
+		EF623A932A9D06AA00F683F0 /* ScrappingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF623A922A9D06AA00F683F0 /* ScrappingConstants.swift */; };
 		EFA498B02A586B970099A53A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = EFA498AF2A586B970099A53A /* Apollo */; };
+		EFE2070B2AA3AD3100E24046 /* ScrappingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE2070A2AA3AD3100E24046 /* ScrappingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +130,10 @@
 		19D5B80629EAD455009CA6A4 /* ChatGPTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTViewModel.swift; sourceTree = "<group>"; };
 		19D5B80929EAD562009CA6A4 /* ChatGPTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTNetwork.swift; sourceTree = "<group>"; };
 		19F9CF902A191CE8000043B4 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
+		EF623A8D2A9BF43B00F683F0 /* ScrappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrappingView.swift; sourceTree = "<group>"; };
+		EF623A902A9BF60700F683F0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		EF623A922A9D06AA00F683F0 /* ScrappingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrappingConstants.swift; sourceTree = "<group>"; };
+		EFE2070A2AA3AD3100E24046 /* ScrappingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrappingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,12 +243,13 @@
 		1958A6602A17BF2F009E5996 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				19D5B7FC29E84D52009CA6A4 /* Realm */,
 				1971D50D29E497DA005205B5 /* Alamofire */,
 				19D5B80C29EAD700009CA6A4 /* Chopo */,
 				1971D50E29E497DF005205B5 /* Lottie */,
 				1971D50F29E497E2005205B5 /* Navigation */,
 				19580A462A11FD500092553A /* Network */,
+				19D5B7FC29E84D52009CA6A4 /* Realm */,
+				EF623A8F2A9BF5EC00F683F0 /* WebView */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -334,6 +343,7 @@
 				196C269429E68CF500F6DBFB /* Modifiers */,
 				196387FD29ED12AC0053D11C /* Publishers */,
 				19A3151229E60C3600612E9F /* RandomUser */,
+				EF623A8C2A9BF1AA00F683F0 /* Scrapping */,
 				19B826F329F9D8E40099BDD2 /* TestingModifiers */,
 				19B826F929FA36680099BDD2 /* ViewBuilders */,
 			);
@@ -384,6 +394,7 @@
 			children = (
 				1971D4FD29E494DE005205B5 /* EnvironmentConstants.swift */,
 				19A3151C29E61B1300612E9F /* RandomUserConstants.swift */,
+				EF623A922A9D06AA00F683F0 /* ScrappingConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -455,6 +466,23 @@
 			path = Chopo;
 			sourceTree = "<group>";
 		};
+		EF623A8C2A9BF1AA00F683F0 /* Scrapping */ = {
+			isa = PBXGroup;
+			children = (
+				EF623A8D2A9BF43B00F683F0 /* ScrappingView.swift */,
+				EFE2070A2AA3AD3100E24046 /* ScrappingViewModel.swift */,
+			);
+			path = Scrapping;
+			sourceTree = "<group>";
+		};
+		EF623A8F2A9BF5EC00F683F0 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				EF623A902A9BF60700F683F0 /* WebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -465,7 +493,7 @@
 				19204CD329E469E5007CD6BB /* Sources */,
 				19204CD429E469E5007CD6BB /* Frameworks */,
 				19204CD529E469E5007CD6BB /* Resources */,
-				19A3151F29E61CFC00612E9F /* ShellScript */,
+				19A3151F29E61CFC00612E9F /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -607,7 +635,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19A3151F29E61CFC00612E9F /* ShellScript */ = {
+		19A3151F29E61CFC00612E9F /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -617,13 +645,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftlint\n";
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -643,21 +672,25 @@
 				1971D51429E49802005205B5 /* RandomUserModel.swift in Sources */,
 				1971D50029E494DE005205B5 /* MainView.swift in Sources */,
 				19F9CF912A191CE8000043B4 /* CarouselViewModel.swift in Sources */,
+				EF623A932A9D06AA00F683F0 /* ScrappingConstants.swift in Sources */,
 				1958A6632A17C1E1009E5996 /* CarouselView.swift in Sources */,
 				1971D51829E498BB005205B5 /* NavigationManagerView.swift in Sources */,
 				19D5B80229E890BD009CA6A4 /* RealmManager.swift in Sources */,
 				19D5B80A29EAD562009CA6A4 /* ChatGPTNetwork.swift in Sources */,
 				196387FC29EC4A8C0053D11C /* RandomUsersSavedViewModel.swift in Sources */,
+				EF623A8E2A9BF43B00F683F0 /* ScrappingView.swift in Sources */,
 				19A3151A29E612B300612E9F /* RandomUserViewModel.swift in Sources */,
 				196387F929EC354D0053D11C /* RandomUsersSavedView.swift in Sources */,
 				19B826F829F9DEF20099BDD2 /* TopErrorView.swift in Sources */,
 				1971D51629E498B5005205B5 /* LottieView.swift in Sources */,
+				EF623A912A9BF60700F683F0 /* WebView.swift in Sources */,
 				19D5B80729EAD455009CA6A4 /* ChatGPTViewModel.swift in Sources */,
 				196DB73A2A088FE000952516 /* RandomUserViewModel+Network.swift in Sources */,
 				19B826F529F9DE780099BDD2 /* TestingModifiers.swift in Sources */,
 				196C269629E68D1F00F6DBFB /* ViewExtension.swift in Sources */,
 				19D5B80529EAD42F009CA6A4 /* ChatGPTView.swift in Sources */,
 				196387F629EAEB440053D11C /* RandomUserAdapter.swift in Sources */,
+				EFE2070B2AA3AD3100E24046 /* ScrappingViewModel.swift in Sources */,
 				1971D51129E497F5005205B5 /* CallingAnAPI.swift in Sources */,
 				19BE48B52A158C4000282116 /* AsyncNetworkCall.swift in Sources */,
 				196C269329E6592700F6DBFB /* CustomInterceptor.swift in Sources */,
@@ -818,11 +851,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TestingIOSApp/TestingIOSApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TestingIOSApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 6W648Y39HX;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -843,6 +877,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roncuevas.TestingIOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -857,11 +892,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TestingIOSApp/TestingIOSApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TestingIOSApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 6W648Y39HX;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -882,6 +918,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roncuevas.TestingIOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;

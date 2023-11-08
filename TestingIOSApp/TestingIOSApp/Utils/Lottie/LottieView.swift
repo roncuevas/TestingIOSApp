@@ -1,10 +1,3 @@
-//
-//  LottieView.swift
-//  iOS_Testing
-//
-//  Created by Aarón Alberto Martínez Cuevas on 09/04/23.
-//
-
 import SwiftUI
 import Lottie
 

@@ -1,10 +1,3 @@
-//
-//  AsyncNetworkCall.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 17/05/23.
-//
-
 import Foundation
 import SwiftUI
 

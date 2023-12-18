@@ -1,10 +1,3 @@
-//
-//  RandomUserViewModel+Network.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 07/05/23.
-//
-
 import Foundation
 import Alamofire
 

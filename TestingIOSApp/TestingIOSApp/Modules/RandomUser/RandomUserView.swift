@@ -1,10 +1,3 @@
-//
-//  RandomUserView.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 11/04/23.
-//
-
 import SwiftUI
 import Kingfisher
 import Combine

@@ -1,10 +1,3 @@
-//
-//  CarouselViewModel.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 20/05/23.
-//
-
 import Foundation
 import SwiftUI
 

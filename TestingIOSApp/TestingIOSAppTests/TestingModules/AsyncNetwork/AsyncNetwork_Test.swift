@@ -1,10 +1,3 @@
-//
-//  AsyncNetwork_Test.swift
-//  TestingIOSAppTests
-//
-//  Created by Aarón Alberto Martínez Cuevas on 17/05/23.
-//
-
 import XCTest
 @testable import TestingIOSApp
 

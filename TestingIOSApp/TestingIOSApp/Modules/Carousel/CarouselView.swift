@@ -1,10 +1,3 @@
-//
-//  CarouselView.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 19/05/23.
-//
-
 import SwiftUI
 
 struct CarouselView: View {

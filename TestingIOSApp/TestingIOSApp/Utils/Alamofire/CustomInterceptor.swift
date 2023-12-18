@@ -1,10 +1,3 @@
-//
-//  CustomInterceptor.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 11/04/23.
-//
-
 import Foundation
 import Alamofire
 

@@ -1,10 +1,3 @@
-//
-//  SplashScreenView.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 08/04/23.
-//
-
 import SwiftUI
 
 struct SplashScreenView: View {

@@ -1,10 +1,3 @@
-//
-//  EnvironmentConstants.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 09/04/23.
-//
-
 import Foundation
 
 enum Environment {

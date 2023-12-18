@@ -1,10 +1,3 @@
-//
-//  MainView.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 09/04/23.
-//
-
 import SwiftUI
 
 struct MainView: View {

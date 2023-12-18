@@ -1,10 +1,3 @@
-//
-//  CallingAnAPI.swift
-//  iOS_Testing
-//
-//  Created by Aarón Alberto Martínez Cuevas on 09/04/23.
-//
-
 import Foundation
 import Alamofire
 

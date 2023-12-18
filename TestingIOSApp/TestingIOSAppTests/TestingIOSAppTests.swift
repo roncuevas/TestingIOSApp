@@ -1,10 +1,3 @@
-//
-//  TestingIOSAppTests.swift
-//  TestingIOSAppTests
-//
-//  Created by Aarón Alberto Martínez Cuevas on 10/04/23.
-//
-
 import XCTest
 
 final class TestingIOSAppTests: XCTestCase {

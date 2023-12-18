@@ -1,10 +1,3 @@
-//
-//  RandomUserViewModelNetworkTest.swift
-//  TestingIOSAppTests
-//
-//  Created by Aarón Alberto Martínez Cuevas on 07/05/23.
-//
-
 import XCTest
 @testable import TestingIOSApp
 

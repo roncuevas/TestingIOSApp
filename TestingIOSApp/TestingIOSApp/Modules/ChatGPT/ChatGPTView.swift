@@ -1,10 +1,3 @@
-//
-//  ChatGPTView.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 15/04/23.
-//
-
 import SwiftUI
 
 struct ChatGPTView: View {

@@ -1,10 +1,3 @@
-//
-//  TestingViewBuilder.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 26/04/23.
-//
-
 import SwiftUI
 
 struct HeaderViewGeneric<Content: View>: View {

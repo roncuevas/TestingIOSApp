@@ -1,10 +1,3 @@
-//
-//  RandomUsersSavedView.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 16/04/23.
-//
-
 import SwiftUI
 import Kingfisher
 

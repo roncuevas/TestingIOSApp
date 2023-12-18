@@ -1,10 +1,3 @@
-//
-//  RandomUserRealmModel.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 13/04/23.
-//
-
 import Foundation
 import RealmSwift
 

@@ -1,10 +1,3 @@
-//
-//  RandomUsersSavedViewModel.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Alberto Martínez Cuevas on 16/04/23.
-//
-
 import Foundation
 
 class RandomUsersSavedViewModel: ObservableObject {

@@ -1,10 +1,3 @@
-//
-//  WebView.swift
-//  TestingIOSApp
-//
-//  Created by Aarón Martínez Cuevas on 27/08/23.
-//
-
 import SwiftUI
 import Foundation
 import WebKit
